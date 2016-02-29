@@ -1,0 +1,63 @@
+body {
+	background: #333;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+}
+
+@-webkit-keyframes green-blinking {
+	from {
+		background-color: #749a02;
+		-webkit-box-shadow: 0 0 9px #333;
+	}
+	50% {
+		background-color: #91bd09;
+		-webkit-box-shadow: 0 0 18px #91bd09;
+	}
+	to {
+		background-color: #749a02;
+		-webkit-box-shadow: 0 0 9px #333;
+	}
+}
+
+@-webkit-keyframes orange-blinking {
+	from {
+		background-color: #d45500;
+		-webkit-box-shadow: 0 0 9px #333;
+	}
+	50% {
+		background-color: #ff5c00;
+		-webkit-box-shadow: 0 0 18px #ff5c00;
+	}
+	to {
+		background-color: #d45500;
+		-webkit-box-shadow: 0 0 9px #333;
+	}
+}
+
+a.button {
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.item1.button {
+	-webkit-animation-name: green-blinking;
+	-webkit-animation-duration: 3s;
+}
+
+.item2.button {
+	-webkit-animation-name: orange-blinking;
+	-webkit-animation-duration: 4s;
+}
+
+.container {
+	width: 100%;
+	height: 180px;
+	text-align: center;
+}
+
+.container a.button {
+	display: inline-block;
+	margin: 30px;
+	padding: 16px;
+	color: #FFF;
+	font-size: 24px;
+}
